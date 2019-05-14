@@ -13,7 +13,7 @@
     <section id="content">
         <div class="bg-top">
         	<div class="bg-top-2">
-                <div class="bg">
+                <div class="bg" style="background: url(<%= image_path("bg-top.jpg")%>) center top no-repeat;">
                     <div class="bg-top-shadow">
                         <div class="main">
                             <div class="box">
@@ -22,21 +22,15 @@
                                         <div class="wrapper">
                                             <div class="grid_12">
                                             	<div class="indent-left">
-                                                	<h3 class="p2">İletişim Formu</h3>
-                                                    <form id="contact-form" method="post" enctype="multipart/form-data">                    
-                                                        <fieldset>
-                                                              <label><span class="text-form">İsim Soyisim:</span>
-                                                                <input name="p1" type="text" /></label>
-                                                              <label><span class="text-form">Email:</span><input name="p2" type="text" /></label>   
-                                                              <label><span class="text-form">Telefon:</span>
-                                                                <input name="p3" type="text" /></label>                                    
-                                                              <div class="wrapper"><div class="text-form">Mesajınız:</div><textarea></textarea></div>
-                                                              <div class="buttons">
-                                                                  <a class="button" href="#" onClick="document.getElementById('contact-form').reset()">Temizle</a>
-                                                                  <a class="button" href="#" onClick="document.getElementById('contact-form').submit()">Gönder</a>
-                                                              </div>                             
-                                                        </fieldset>						
-                                                    </form>
+                                                	<article class="grid_9">
+                                                   	  <h3 class="prev-indent-bot">Adres:</h3>
+                                                        <dl>
+                                                          <dt class="indent-bot">Şehit Kamil / GAZİANTEP</dt>
+                                                          <dd><span>İletişim Tel::</span> +90 536 050 2030</dd>
+                                                          <dd>&nbsp;</dd>
+                                                          <dd><strong>E-mail:</strong> <a href="#">gaziayintapsolucanevi@gmail.com</a></dd>
+                                                        </dl>
+                                                    </article>
                                                 </div>
                                             </div>
                                         </div>
@@ -52,15 +46,7 @@
         	<div class="main">
             	<div class="container_12">
                 	<div class="wrapper">
-                	  <article class="grid_9">
-                       	  <h3 class="prev-indent-bot">Adres:</h3>
-                            <dl>
-                              <dt class="indent-bot">Şehit Kamil / GAZİANTEP</dt>
-                              <dd><span>İletişim Tel::</span> +90 536 050 2030</dd>
-                              <dd>&nbsp;</dd>
-                              <dd><strong>E-mail:</strong> <a href="#">gaziayintapsolucanevi@gmail.com</a></dd>
-                            </dl>
-                        </article>
+                	  
                   </div>
             	</div>
             </div>
