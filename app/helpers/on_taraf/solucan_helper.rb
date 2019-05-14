@@ -1,0 +1,2 @@
+module OnTaraf::SolucanHelper
+end

@@ -1,0 +1,67 @@
+<% if user_signed_in? %>
+    <%= render partial: "layouts/shared/arka_taraf/navbar" %>
+<% end %>
+<script>
+    $(document).ready(function(){
+        $($(".menu").find('li').find('a')[3]).attr('class','active');
+    });
+</script>
+<br></br>
+
+
+<!-- content -->
+    <section id="content">
+        <div class="bg-top">
+        	<div class="bg-top-2">
+                <div class="bg">
+                    <div class="bg-top-shadow">
+                        <div class="main">
+                            <div class="box">
+                                <div class="padding">
+                                    <div class="container_12">
+                                        <div class="wrapper">
+                                            <div class="grid_12">
+                                            	<div class="indent-left p2">
+                                                	<h3 class="p0">Faydaları</h3>
+                                                </div>
+                                                <div class="indent-left p2">
+                                                        <p class="color-4 prev-indent-bot">Genel Faydaları.</p>
+                                                        <p>Bitkiler için aynı anda hem besin kaynağı hem de büyümeleri için teşvik olarak etkilidir; <br>
+                                                          Humusu az olan toprakları iyileştirir, topraktaki faydalı mikroorganizmaları uyarır, <br>
+                                                          Toprağın genel durumunu iyileştirir ve topraktaki organogenetik elemanlarını bitkilerin alabileceği sekle dönüştürür; <br>
+                                                          Organik maddeleri az olan topraklar için organik azotun yüksek oranı büyük önem taşımaktadır, özellikle uzun sure mineral gübrelemeden sonra; <br>
+                                                          Gübre özün içerdiği besleyici elemanlar daha uzun sure için toprakta kalmaktadır, bu da bitkilerce daha iyi alınmalarını sağlar; <br>
+                                                          Hızla suda çözünür ve ziraatta kullanılan tüm ilaç ve gübrelerle uyumludur; <br>
+                                                        Bitkilerin sağlam kok sistemi oluşması için yardımcı olur, bitkilerin stres ve patojenlere karsı dayanıklılığını artırır ve ekolojik temiz ziraat ürünlerinin üretimi için mükemmel bir gübredir.</p>
+                                                        </br></hr></br>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <% @Faydalars.each do |faydalar| %>
+                                                        <article class="grid_4 alpha">
+                                                            <div class="indent-left">
+                                                              <center>
+                                                                    <figure class="frame2 p2">
+                                                                    <%= image_tag faydalar.resim.url(:thumb) if faydalar.resim? %></figure>
+                                                                    <p class="color-4 prev-indent-bot"><%= faydalar.baslik %>.</p>
+                                                                    <p><%= faydalar.aciklama %></p>
+                                                              </center>
+                                                            </div>
+                                                        </article>
+                                                    <% end %>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </div>
+        <div class="bg-bot">
+        	<div class="main">
+            	<div class="container_12"></div>
+            </div>
+        </div>
+    </section>

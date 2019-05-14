@@ -1,0 +1,33 @@
+<%= form_with(model: faydalar, local: true) do |form| %>
+  <% if faydalar.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(faydalar.errors.count, "error") %> prohibited this faydalar from being saved:</h2>
+
+      <ul>
+      <% faydalar.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :baslik %>
+    <%= form.text_field :baslik %>
+  </div>
+
+  <div class="field">
+    <%= form.label :aciklama %>
+    <%= form.text_area :aciklama %>
+  </div>
+  
+  <div class="field">
+     <%= form.label :resim %>
+     <%= form.file_field :resim %>
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

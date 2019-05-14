@@ -1,43 +1,59 @@
 <% if user_signed_in? %>
     <%= render partial: "layouts/shared/arka_taraf/navbar" %>
 <% end %>
+<script>
+    $(document).ready(function(){
+        $($(".menu").find('li').find('a')[0]).attr('class','active');
+    });
+</script>
 <br></br>
 
+<% if params[:sayfayi_yenile] %>
+    <script>
+        $(document).ready(function(){
+            location.href="/";
+        });
+    </script>
+<% end %>
 
-<!-- content -->
-    <section id="content">
+<section id="content">
         <div class="bg-top">
         	<div class="bg-top-2">
                 <div class="bg">
                     <div class="bg-top-shadow">
                         <div class="main">
-                            <div class="box">
-                                <div class="padding">
-                                    <div class="container_12">
-                                        <div class="wrapper">
-                                            <div class="grid_12">
-                                            	<div class="indent-left">
-                                                	<h3 class="p2">İletişim Formu</h3>
-                                                    <form id="contact-form" method="post" enctype="multipart/form-data">                    
-                                                        <fieldset>
-                                                              <label><span class="text-form">İsim Soyisim:</span>
-                                                                <input name="p1" type="text" /></label>
-                                                              <label><span class="text-form">Email:</span><input name="p2" type="text" /></label>   
-                                                              <label><span class="text-form">Telefon:</span>
-                                                                <input name="p3" type="text" /></label>                                    
-                                                              <div class="wrapper"><div class="text-form">Mesajınız:</div><textarea></textarea></div>
-                                                              <div class="buttons">
-                                                                  <a class="button" href="#" onClick="document.getElementById('contact-form').reset()">Temizle</a>
-                                                                  <a class="button" href="#" onClick="document.getElementById('contact-form').submit()">Gönder</a>
-                                                              </div>                             
-                                                        </fieldset>						
-                                                    </form>
-                                                </div>
+                            <div class="gallery p3">
+                            	<div class="wrapper indent-bot">
+                                    <div id="gallery" class="content">
+                                       <div class="wrapper">
+                                           <div class="slideshow-container">
+                                                <div id="slideshow" class="slideshow"></div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div id="thumbs" class="navigation">
+                                        <ul class="thumbs noscript">
+                                           <li>
+                                                <a class="thumb" href="<%=image_path('gallery-img1.jpg')%>" title=""> <img src="<%=image_path('thumb-1.jpg')%>" alt="" /><span></span> </a>
+                                            </li> 
+                                            <li>
+                                                <a class="thumb" href="<%=image_path('gallery-img2.jpg')%>" title=""> <img src="<%=image_path('thumb-2.jpg')%>" alt="" /><span></span> </a>
+                                            </li> 
+                                            <li>
+                                                <a class="thumb" href="<%=image_path('gallery-img3.jpg')%>" title=""> <img src="<%=image_path('thumb-3.jpg')%>" alt="" /><span></span> </a>
+                                            </li> 
+                                            <li>
+                                                <a class="thumb" href="<%=image_path('gallery-img4.jpg')%>" title=""> <img src="<%=image_path('thumb-4.jpg')%>" alt="" /><span></span> </a>
+                                            </li> 
+                                            <li>
+                                                <a class="thumb" href="<%=image_path('gallery-img5.jpg')%>" title=""> <img src="<%=image_path('thumb-5.jpg')%>" alt="" /><span></span> </a>
+                                            </li>         
+                                        </ul>
+                                    </div>
                                 </div>
+                                <div class="inner"></div>
                             </div>
+                            <div class="container_12"></div>
                         </div>
                     </div>
                 </div>
@@ -47,18 +63,26 @@
         	<div class="main">
             	<div class="container_12">
                 	<div class="wrapper">
-                	  <article class="grid_9">
-                       	  <h3 class="prev-indent-bot">Adres:</h3>
-                            <dl>
-                              <dt class="indent-bot">Şehit Kamil / GAZİANTEP</dt>
-                              <dd><span>İletişim Tel::</span> +90 536 050 2030</dd>
-                              <dd>&nbsp;</dd>
-                              <dd><strong>E-mail:</strong> <a href="#">gaziayintapsolucanevi@gmail.com</a></dd>
-                            </dl>
+                    	<article class="grid_4">
+                       	  <h3 class="prev-indent-bot">Solucan Gübresi </h3>
+                            <p class="prev-indent-bot">Kırmızı Kaliforniya Kültür Solucanlarının dışkılarından elde edilen,  Organik %100 Solucan Gübresi; sebze, meyve ve bitkinin verimini, dayanıklılığını, kalitesini arttırırken, doğal aromasını, nefasetini kazandırır, kök ve kök çevresindeki hastalıklara karşı direnç sağlar.
+                          </p>
+                    	</article>
+                        <article class="grid_4">
+                        	<h3 class="prev-indent-bot">Tarımda Faydası</h3>
+                            <div class="quote">
+                           	  <p class="prev-indent-bot">Humusu az olan toprakları iyileştirir, topraktaki faydalı mikroorganizmaları uyarır,<br>
+                           	    Toprağın genel durumunu iyileştirir ve topraktaki organogenetik elemanlarını bitkilerin alabileceği şekile dönüştürür;<br>
+                           	    Organik maddeleri az olan topraklar için organik azotun yüksek oranı büyük önem taşımaktadır, özellikle uzun sure mineral gübrelemeden sonra;Gübre özün içerdiği besleyici elemanlar daha uzun sure için toprakta kalmaktadır, bu da bitkilerce daha iyi alınmalarını sağlar;<br>
+                           	     
+                        </p></div></article>
+                        <article class="grid_4">
+                        	<h3 class="prev-indent-bot">Kullanım Alanları</h3>
+                            <time class="tdate-1" datetime="2011-08-15">Her Türlü Sebze, Meyve Bahçeniz, Bütün Tarla ve Sera Bitkileriniz için, Besleyici, Köklendirici, Güçlendirici, Verim Arttırıcı ve Erkencilik Sağlayan Özelliklere Sahip<br>
+                            Organik %100 Solucan Gübresi’dir.</time>
                         </article>
-                  </div>
-            	</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    

@@ -1,0 +1,19 @@
+<%= render partial: "layouts/shared/arka_taraf/navbar" %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Baslik:</strong>
+  <%= @faydalar.baslik %>
+</p>
+
+<p>
+  <strong>Aciklama:</strong>
+  <%= @faydalar.aciklama %>
+</p>
+
+<p>
+    <%= image_tag @faydalar.resim.url(:medium) if @faydalar.resim? %>
+</p>
+
+<%= link_to 'Edit', edit_faydalar_path(@faydalar) %> |
+<%= link_to 'Back', faydalars_path %>

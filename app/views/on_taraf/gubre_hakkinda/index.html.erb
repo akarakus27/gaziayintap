@@ -1,0 +1,68 @@
+<% if user_signed_in? %>
+    <%= render partial: "layouts/shared/arka_taraf/navbar" %>
+<% end %>
+<script>
+    $(document).ready(function(){
+        $($(".menu").find('li').find('a')[1]).attr('class','active');
+    });
+</script>
+<br></br>
+ <section id="content">
+        <div class="bg-top">
+        	<div class="bg-top-2">
+                <div class="bg">
+                    <div class="bg-top-shadow">
+                        <div class="main">
+                            <div class="box p3">
+                                <div class="padding">
+                                    <div class="container_12"><div class="wrapper">
+                                        <div class="grid_12">
+                                                <div class="wrapper">
+                                                  <article class="grid_8 omega">
+                                                    <div class="indent-right">
+                                                            <h3 class="p2">Gübre Hakkında</h3>
+                                                      <div class="wrapper prev-indent-bot2">
+                                                                <figure class="img-indent2 frame2"><img src="<%= image_path("page2-img1.jpg")%>" alt="" width="295" height="204" /></figure>
+                                                        <div class="extra-wrap">
+                                                            <h6 class="prev-indent-bot">&nbsp; </h6>
+                                                                <p><strong><em>Solucan gübresi</em></strong> yaklaşık 40 yıldır başta ABD olmak üzere birçok Avrupa ülkesi tarımsal işletmeleri tarafından üretilmekte ve kullanılmaktadır. Solucan gübresi; Kırmızı Californiya solucanı adıyla bilinen Lumbricus rubellis ve Eisenia foetida toprak solucanı türlerinin organik olarak yetiştirilmiş büyükbaş hayvanların dışkıları ve organik bitkisel materyallerin fiziksel ve kimyasal yapılarını değiştirmeleri temeline dayanarak ürettikleri bir toprak düzenleyici ve bitki besleme materyalidir. </p>
+                                                        </div></div>
+                                                            <p>Bu değişimde 1 m3 hacimlik hammadde içerisinde yaklaşık 250.000 adet solucan üç ay süresince işlem yapmaktadır. Solucan gübresi içerdiği yüksek düzeyde toprak ve bitki için yararlı simbiyotik(rhizobium) ve asimbiyotik (serbest ve azot fiske eden bakteriler ve mikoriza mantarları) bakteriler ile toprağın mikroflora ve mikrofaunasmasında canlılık kazandırır. </p>
+                                                            <p>Solucanlar sindirim sistemleri içinde sentezledikleri antibiyotik nitelikli yapılar, aminoasit ve vitaminleri dışkılarına karıştırarak ortaya çıkan gübrenin biyolojik aktivitesini arttırırlar. Böylece bu gübreyle beslenen bitkilerin sağlıklı ve hızlı gelişmelerini sağlarlar. Sözü edilen bu biyolojik stimulatörler diğer hayvansal gübrelere oranla 100 kat daha fazladır. Kimyasal gübrelerde ise hiç bulunmamaktadır. </p>
+                                                            <p>Ayrıca muhteviyatındaki humik asit ve fulvik asit bitki beslemesi için son derece gerekli olan maddelerdir. </p>
+                                                            <p><strong>Solucan gübresinin özellikleri </strong><br>
+                                                              - <em>Granüler yapısı toprağın sütrüktürünü düzenleyip havalanmayı sağlarken su tutma kapasitesinin yüksekliği topraktaki su stresini minimize etmektedir. <br>
+                                                              - Yapısındaki çok sayıda bakteri verildiği topraktaki zararlı bakterilerle rekabet ederek onların zararlı etkilerini ortadan kaldırır, böylece bitkilerin hastalıklara karşı direncini artırır. <br>
+                                                              - Hava şartlarının olumsuz etkilerine(don, sıcaklık farkları vb.) karşı bitkiyi korur. <br>
+                                                              - Kesinlikle yabani ot tohumu içermez. <br>
+                                                              - Kaliteli, bol verimli ve raf ömrü uzun ürünler elde edilmesini sağlar. <br>
+                                                              - %100 ekolojik ve non-toksiktir. <br>
+                                                              - Toprağın Ph,sürtüktür, nem gibi özelliklerinin düzenlenmesini sağlar. <br>
+                                                              - Bilhassa kimyasallarla kirlenmiş, kuvvetini ve canlılığını yitirmiş, yorulmuş toprakların ıslahını sağlar. <br>
+                                                              - Asitli, kumlu toprakları düzenleyerek tarıma elverişli hale getirir. <br>
+                                                              - Kokusuzdur. <br>
+                                                              - Solucan gübresiyle yetiştirilmiş bitkilerde nitrat kalıntısı bulunmaz. <br>
+                                                              - Suyu, havayı ve toprağı kirletmez. <br>
+                                                      - Toprakta uzun süre kalır dolayısıyla bitkinin uzun süre besin ihtiyacını karşılar. Besin elementlerini bitkinin ihtiyacına göre tedricen bitkiye kazandırır. </em></p>
+                                                            <p>Solucan Gübresi çok sayıda simbiyotik bakteri (Rhizobium) ve asimbiyotik mikroorganizmalardan azot fiksasyonu yapan bakteri (Azotobakter) ve mikoriza mantarları ihtiva eder. Bu mikro organizmalar toprak içinde bulunan ancak bitki tarafından alınamayan besin maddelerine parçalayarak bitki tarafından alınabilir forma dönüştürürler. Ayrıca azot fiske eden bakteriler havadaki azotun toprağa kazandırılmasını sağlayarak bitki tarafından alımını kolaylaştırır. Solucanların salgı maddeleri enzimler üretim süreci içinde dışkılarına karıştığında çok sayıda ve çeşitte enzim, vitamin, aminoasit, büyüme hormonu içermektedir. Bunlar ise bitkinin daha hızlı gelişmesini ve olumsuz çevre şartlarına karşı dirençli olmalarını sağlar.</p>
+                                                            <p>&nbsp; </p>
+                                                    </div>
+                                                  </article>
+                                          </div>
+                                      </div>
+                                        </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="container_12"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </div>
+        <div class="bg-bot">
+        	<div class="main">
+            	<div class="container_12"></div>
+            </div>
+        </div>
+    </section>

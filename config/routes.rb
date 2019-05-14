@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+  resources :faydalars
   get 'panel', to: "admin#index"
   namespace :on_taraf do
     get 'ana_sayfa/index'
+    get 'gubre_hakkinda/index'
+    get 'iletisim/index'
+    get 'solucan/index'
+    get 'faydalari/index'
   end
   
   

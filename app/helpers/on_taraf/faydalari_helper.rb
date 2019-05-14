@@ -1,0 +1,2 @@
+module OnTaraf::FaydalariHelper
+end
