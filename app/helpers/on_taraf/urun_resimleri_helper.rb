@@ -1,2 +1,0 @@
-module OnTaraf::UrunResimleriHelper
-end

@@ -1,2 +1,0 @@
-module OnTaraf::IletisimHelper
-end

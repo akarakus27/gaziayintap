@@ -76,8 +76,8 @@ h1 {padding:15px 0 0 0;position:relative;font-weight:normal;text-transform:upper
 /***** menu *****/
 .menu {padding:0;width:100%}
 .menu li {float:left;position:relative}
-	.menu li:first-child {background:url(../images/menu-a-tail.gif) 0 -71px no-repeat}
-.menu li a {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;display:block;width:188px;font-size:21px;line-height:1.238em;padding:21px 0 24px 0;color:#262626;text-align:center;text-transform:uppercase;background:url(../images/menu-a-tail.gif) right -71px no-repeat;letter-spacing:-1px}
+	.menu li:first-child {background:url(assets/images/menu-a-tail.gif) 0 -71px no-repeat}
+.menu li a {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;display:block;width:188px;font-size:21px;line-height:1.238em;padding:21px 0 24px 0;color:#262626;text-align:center;text-transform:uppercase;background:url(../menu-a-tail.gif) right -71px no-repeat;letter-spacing:-1px}
 .menu li a:hover,
 .menu li a.active {color:#fff;background-position:left top;background-repeat:repeat-x;background-color:#000}
 /***** search form *****/
